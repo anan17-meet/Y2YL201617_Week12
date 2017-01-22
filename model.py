@@ -83,7 +83,7 @@ class Product(Base):
     shoppingCarts = relationship("ShoppingCartAssociation", back_populates="product")
 
 
-engine = create_engine('sqlite:///fizzBuzz.db')
+engine = create_engine('https://breadfish.herokuapp.com/')
 
 
 Base.metadata.create_all(engine)
